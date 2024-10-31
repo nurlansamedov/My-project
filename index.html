@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="task">
+        <div class="calculator">
+            <div class="display">
+                <div class="condition"></div>
+                <div class="result-container">
+                    <p class="symbol">=</p>
+                    <h2 class="result">0</h2>
+                </div>
+                <hr class="line">
+            </div>
+            <div class="keys">
+                <div>
+                    <input type="button" value="C" class="key key-op" onclick="display('')" style="background-color: #74EBD5; color: white;">
+                    <input type="button" value="/" class="key" onclick="divide()" style="background-color: #74EBD5; color: white;">
+                    <input type="button" value="%" class="key key-op" onclick="percent()" style="background-color: #74EBD5; color: white;">
+                    <input type="button" value="*" class="key key-op" onclick="multiplication()" style="background-color: #74EBD5; color: white;">
+                </div>
+                <div>
+                    <input type="button" value="7" class="key" onclick="display('7')">
+                    <input type="button" value="8" class="key" onclick="display('8')">
+                    <input type="button" value="9" class="key" onclick="display('9')">
+                    <input type="button" value="±" class="key key-op" onclick="changeSign()" style="background-color: #74EBD5; color: white;">
+                </div>
+                <div>
+                    <input type="button" value="4" class="key" onclick="display('4')">
+                    <input type="button" value="5" class="key" onclick="display('5')">
+                    <input type="button" value="6" class="key" onclick="display('6')">
+                    <input type="button" value="-" class="key key-op" onclick="subtruction()" style="background-color: #74EBD5; color: white;">
+                </div>
+                <div>
+                    <input type="button" value="1" class="key" onclick="display('1')">
+                    <input type="button" value="2" class="key" onclick="display('2')">
+                    <input type="button" value="3" class="key" onclick="display('3')">
+                    <input type="button" value="+" class="key key-op" onclick="plus()" style="background-color: #74EBD5; color: white;">
+                </div>
+                <div>
+                    <input type="button" value="." class="key" onclick="writePointToResult()">
+                    <input type="button" value="0" class="key" onclick="display('0')">
+                    <input type="button" value="Del" class="key" onclick="backspace()" style="background-color: #74EBD5; color: white;">
+                    <input type="button" value="=" class="key" onclick="equal()" style="background-color: #74EBD5; color: white;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>
